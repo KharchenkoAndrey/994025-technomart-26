@@ -51,11 +51,63 @@
     	<h3>Перфораторы</h3>
 
     <section>
-    	<h2>Фильтр товаров</h2>
+    	<h2 class="visualy-hidden">Фильтр товаров</h2>
       <h3>Цена:</h3>
-      <h3>Производители:</h3>
-      <h3>Питание:</h3>
-      <button>Показать</button>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <label>
+                <input claass="visually-hidden" type="checkbox" name="bosch" checked>
+                Bosch
+              </label>
+            </li>
+            <li>
+              <label>
+                <input claass="visually-hidden" type="checkbox" name="inteerskol">
+                Интерскол
+              </label>
+            </li>
+            <li>
+              <label>
+                <input claass="visually-hidden" type="checkbox" name="makita" checked>
+                Makita
+              </label>
+            </li>
+            <li>
+              <label>
+                <input claass="visually-hidden" type="checkbox" name="dewalt">
+                DeWalt
+              </label>
+            </li>
+            <li>
+              <label>
+                <input claass="visually-hidden" type="checkbox" name="hitachi">
+                Hitachi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <label>
+                <input class="visually-hidden" type="radio" name="battery" checked>
+                Аккумуляторные
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="visually-hidden" type="radio" name="nonbattery">
+                Сетевые
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      <button type="submit">Показать</button>
+      </form>
     </section>
 
     <section>
@@ -214,6 +266,13 @@
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
+      </section>
+
+      <section>
+        <h2>Товар добавлен в корзину!</h2>
+        <button type="button">Закрыть</button>
+        <a href="">Оформить заказ</a>
+        <a href="catalog.html">Продолжить покупки</a>
       </section>
 
     </main>
