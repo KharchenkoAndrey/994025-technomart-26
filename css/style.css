@@ -46,7 +46,7 @@ a {
 }
 
 .autorization-batton:active {
-  color: #c5c5c5;
+  opacity: 0.3;
 }
 
 .order-options {
@@ -169,8 +169,28 @@ input[type="search"]:focus {
   color: #868c95;
 }
 
+.user-navigation {
+  list-style: none;
+}
 
+.user-navigation a {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
 
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  opacity: 0.3;
+}
+
+.user:hover {
+  color: #000000;
+}
 
 
 .about h2 {
@@ -227,6 +247,20 @@ input[type="search"]:focus {
   color: #f3f7f8;
 }
 
+.copyright a {
+  color: #ffd180;
+}
+
+.copyright a:hover,
+.copyright a:focus {
+  text-decoration: underline;
+}
+
+.copyright a:active {
+  text-decoration: none;
+  color: #c73644;
+}
+
 
 .main-footer-navigation,
 .additional-footer-navigation {
@@ -261,4 +295,126 @@ input[type="search"]:focus {
 
 .social ul {
   list-style: none;
+}
+
+.social ul li {
+  background-color: #212a3a;
+}
+
+.social ul li:hover,
+.social ul li:focus,
+.social ul li:active {
+  background-color: #ee3643;
+}
+
+.social ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.category {
+  background-color: #f2f6f8;
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filters,
+.catalogs {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.form-button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.product {
+  list-style: none;
+}
+
+.product-item {
+  border: 1px solid #e5e5e5;
+}
+
+.product-item-title a {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.old-cost {
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+}
+
+.new-cost {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.pagination-list li {
+  border: 1px solid #e5e5e5;
+}
+
+.about-perforator {
+  background-color: #f2f6f8;
+}
+
+.about-perforator h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-perforator p {
+  font-size: 13px;
+  line-height: 24px;
 }
