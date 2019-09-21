@@ -33,6 +33,7 @@ a {
 
 
 .autorization-batton {
+  background-color: #ffffff;
   color: #000000;
 
   font-size: 21px;
@@ -48,6 +49,216 @@ a {
   color: #c5c5c5;
 }
 
+.order-options {
+  padding: 0;
+}
+
+.order-options li {
+  width: 150px;
+  list-style: none;
+
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-options a {
+  color: #ffffff;
+}
+
+.order-options a:active {
+  color: #8b8e94;
+}
+
+ input[type="search"] {
+  background-color: #293449;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-options li:hover,
+.order-options li:focus,
+input[type="search"]:hover,
+input[type="search"]:active {
+  background-color: #212a3a;
+}
+
+input[type="search"]:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.order-options li:active {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+
+.order-options li:nth-child(3) {
+  background-color: #63a63e;
+}
+
+.order-options li:nth-child(3):hover,
+.order-options li:nth-child(3):focus {
+  background-color: #5fbb2d;
+}
+
+.order-options li:nth-child(3):active {
+  color: #8b8e94;
+  background-color: #518534;
+}
+
+.main-header {
+  background-color: #f3f7f9;
+}
+
 .header-top {
   background-color: #293449;
+}
+
+.header-logo {
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.phone {
+  width: 270px;
+  text-align: center;
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+}
+
+.adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.site-navigation li {
+  background-color: #32425c;
+  list-style: none;
+}
+
+.site-navigation {
+  padding: 0;
+}
+
+.site-navigation a {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+  color: #868c95;
+}
+
+
+
+
+
+.about h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.delivery-company {
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.main-footer  {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-logo {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-adress {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f8;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #f3f7f8;
+}
+
+
+.main-footer-navigation,
+.additional-footer-navigation {
+  list-style: none;
+}
+
+
+.main-footer-navigation a,
+.additional-footer-navigation a {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.additional-footer-navigation a {
+  color: #ffd180;
+}
+
+.main-footer-navigation a:hover,
+.main-footer-navigation a:focus,
+.additional-footer-navigation a:hover,
+.additional-footer-navigation a:focus {
+  text-decoration: underline;
+}
+
+
+.main-footer-navigation a:active,
+.additional-footer-navigation a:active {
+  opacity: 0.5;
+}
+
+.social ul {
+  list-style: none;
 }
