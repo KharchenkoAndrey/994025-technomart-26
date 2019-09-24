@@ -10,8 +10,8 @@
   <body>
 
     <header class="main-header">
-
       <div class="header-top">
+        <div class="container">
     	  <h1><a class="button header-logo" href="index.html">Техномарт</a></h1>
     	  <form class="site-search">
     		<input type="search" name="search" value="Поиск:">
@@ -22,7 +22,9 @@
     		  <li><a href="">Оформить заказ</a></li>
     	  </ul>
       </div>
+      </div>
 
+      <div class="container">
     	<p class="description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
     	<p class="phone">+7 (812) 555-05-55</p>
     	<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -40,10 +42,11 @@
     			<li><a href="">Контакты</a></li>
     		</ul>
     	</nav>
+    </div>
     </header>
 
     <main>
-
+    <div class="container">
       <section class="promo">
         <h2 class="visually-hidden">Промо-Блок</h2>
         <ul class="offers">
@@ -63,6 +66,15 @@
             <img src="https://via.placeholder.com/78x62" width="78" height="62" alt="Иконка">
           </li>
           <li class="offers-item">
+            <div class="slider">
+            <h3 class="slider-title">Дрели</h3>
+            <p>Соседям на радость!</p>
+            <button>Назад</button>
+            <button>Вперед</button>
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+          </li>
+          <li class="offers-item">
             <h3 class="offers-title">Скидки 50%</h3>
             <a class="promo-button" href="">На 350 товаров</a>
             <img src="https://via.placeholder.com/78x62" width="78" height="62" alt="Иконка">
@@ -72,18 +84,11 @@
             <a class="promo-button" href="">Бесплатно</a>
             <img src="https://via.placeholder.com/78x62" width="78" height="62" alt="Иконка">
           </li>
-          <li class="offers-item">
-            <div class="slider">
-            <h3 class="slider-title">Дрели</h3>
-            <p>Соседям на радость!</p>
-            <button>Назад</button>
-            <button>Вперед</button>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </div>
-          </li>
         </ul>
       </section>
+    </div>
 
+    <div class="container">
       <section class="popular">
         <div class="popular-header">
           <h2>Популярные Товары:</h2>
@@ -198,8 +203,10 @@
           </li>
         </ul>
       </section>
+    </div>
 
       <section class="services">
+      <div class="container">
         <h2>Сервисы</h2>
         <p>Сервисы. Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
@@ -210,10 +217,11 @@
         </div>
         <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-        <img src="https://via.placeholder.com/468x261" width="468" height="261" alt="иконка" >
+        <img src="img/truck.png" width="468" height="261" alt="иконка" >
+      </div>
       </section>
 
-      <div class="columns">
+      <div class="columns container">
     	<section class="about">
     		<h2>КОМПАНИЯ «Техномарт»</h2>
     		<p>
@@ -237,7 +245,7 @@
 			<a class="button" href="">Заблудились?Напишите  нам</a>
     	</section>
       </div>
-
+<!--
       <section class="modal modal-write-us">
         <h2 class="visualy-hidden">Обратная Связь</h2>
         <p>
@@ -267,10 +275,12 @@
           <button class="button" type="submit">Отправить</button>
         </form>
       </section>
+    -->
 
     </main>
 
     <footer class="main-footer">
+      <div class="container">
     	<h3><a class="button footer-logo" href="index.html">Техномарт</a></h3>
     	<ul class="main-footer-navigation">
     		<li><a href="">Компания</a></li>
@@ -286,10 +296,12 @@
     		<li><a href="">Инструмент</a></li>
     		<li><a href="">Спецпредложения</a></li>
     	</ul>
+      </div>
       <div class="footer-bottom">
-    	<p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <div class="container">
+    	<p class="copyright-since">© 2010–2019 Компания «Техномарт» Все права защищены</p>
       <div class="social">
-    	  <ul>
+    	  <ul class="social-list">
     		  <li class="social-button"><a href="">Вконтакте</a></li>
     		  <li class="social-button"><a href="">Фейсбук</a></li>
     		  <li class="social-button"><a href="">Инстаграм</a></li>
@@ -297,6 +309,7 @@
       </div>
     	<p class="copyright">Обратная связь: <a href="">mail@htmlacademy.ru</a></p>
     	<p class="copyright">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      </div>
       </div>
     </footer>
 

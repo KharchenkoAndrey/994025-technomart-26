@@ -11,6 +11,7 @@
 
 	<header class="main-header">
     <div class="header-top">
+      <div class="container">
     	<h1><a class="button" href="index.html">Техномарт</a></h1>
       <form class="site-search">
     	<input type="search" name="search" value="Поиск:">
@@ -21,6 +22,8 @@
     		<li><a href="">Оформить заказ</a></li>
     	</ul>
     </div>
+    </div>
+    <div class="container">
     	<p class="description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
     	<p class="phone">+7 (812) 555-05-55</p>
     	<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -41,9 +44,11 @@
     			<li><a href="">Контакты</a></li>
     		</ul>
     	</nav>
+    </div>
     </header>
 
     <main>
+      <div class="container">
 
     	<h2 class="visually-hidden">Каталог продукции</h2>
     	<ul class="breadcrumbs">
@@ -55,6 +60,7 @@
 
     	<h3 class="category">Перфораторы</h3>
 
+  <div class="catalog-columns">
     <section class="filters">
     	<h2 class="visualy-hidden">Фильтр товаров</h2>
       <h3>Цена:</h3>
@@ -115,6 +121,10 @@
       </form>
     </section>
 
+    <section class="catalog">
+
+    		<h2 class="visually-hidden">Список товаров</h2>
+
     <section class="sort">
       <h2>Сортировка:</h2>
       <ul class="sort-type">
@@ -124,9 +134,6 @@
       </ul>
     </section>
 
-    <section class="catalog">
-
-    		<h2 class="visually-hidden">Список товаров</h2>
     		<ul class="product">
     			<li class="product-item">
     				<h3 class="product-item-title">
@@ -261,33 +268,40 @@
     			</li>
     		</ul>
 
-    	<ul class="pagination-list">
-     		<li class="pagination-item pagination-item-current"><a>1</a></li>
-     		<li class="pagination-item"><a href="">2</a></li>
-     		<li class="pagination-item"><a href="">3</a></li>
-     		<li class="pagination-item"><a href="">Следующая</a></li>
-     	</ul>
+     <section class="pagination">
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item"><a href="">2</a></li>
+        <li class="pagination-item"><a href="">3</a></li>
+        <li class="pagination-item"><a href="">Следующая</a></li>
+      </ul>
+    </section>
 
-    	</section>
+      </section>
+    </div>
+  </div>
 
       <section class="about-perforator">
-        <h2>Пара слов о перфораторах:</h2>
-        <p>
+        <div class="container">
+          <h2>Пара слов о перфораторах:</h2>
+          <p>
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
+          </p>
+        </div>
       </section>
-
+<!--
       <section class="modal modal-cart">
         <h2>Товар добавлен в корзину!</h2>
         <button type="button">Закрыть</button>
         <a class="button" href="">Оформить заказ</a>
         <a class="button" href="catalog.html">Продолжить покупки</a>
       </section>
-
+-->
     </main>
 
     <footer class="main-footer">
+      <div class="container">
     	<h3><a class="button footer-logo" href="index.html">Техномарт</a></h3>
     	<ul class="main-footer-navigation">
     		<li><a href="">Компания</a></li>
@@ -303,10 +317,12 @@
     		<li><a href="">Инструмент</a></li>
     		<li><a href="">Спецпредложения</a></li>
     	</ul>
+    </div>
       <div class="footer-bottom">
-    	<p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <div class="container">
+    	<p class="copyright-since">© 2010–2019 Компания «Техномарт» Все права защищены</p>
       <div class="social">
-    	  <ul>
+    	  <ul class="social-list">
     		  <li class="social-button"><a href="">Вконтакте</a></li>
     		  <li class="social-button"><a href="">Фейсбук</a></li>
     		  <li class="social-button"><a href="">Инстаграм</a></li>
@@ -314,6 +330,7 @@
       </div>
     	<p class="copyright">Обратная связь: <a href="">mail@htmlacademy.ru</a></p>
     	<p class="copyright">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+    </div>
       </div>
     </footer>
 

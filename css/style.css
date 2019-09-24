@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .button {
   text-align: center;
   font-size: 14px;
@@ -110,10 +115,16 @@ a {
 
 .main-header {
   background-color: #f3f7f9;
+  padding-bottom: 60px;
 }
 
 .header-top {
   background-color: #293449;
+}
+
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -145,12 +156,17 @@ a {
 }
 
 .site-navigation li {
-  background-color: #32425c;
   list-style: none;
+  padding: 20px  30px;
 }
 
 .site-navigation {
   padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #32425c;
+  /*padding: 0 20px;*/
 }
 
 .site-navigation a {
@@ -160,11 +176,14 @@ a {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation li:hover,
+.site-navigation a:focus,
+.site-navigation li:focus {
   background-color: #293449;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.site-navigation li:active {
   background-color: #1d2739;
   color: #868c95;
 }
@@ -192,9 +211,22 @@ a {
   color: #000000;
 }
 
-
 .offers {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.offers-item {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.offers-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .offers li:nth-child(1),
@@ -210,7 +242,7 @@ a {
   background-color: #dc91d8;
 }
 
-.offers li:nth-child(4) {
+.offers li:nth-child(6) {
   background-color: #8ed78f;
 }
 
@@ -260,6 +292,7 @@ a {
 
 .popular-header {
   background-color: #f9f5f0;
+  margin-bottom: 20px;
 }
 
 .popular-header h2 {
@@ -269,12 +302,44 @@ a {
   color: #32425c;
 }
 
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.product-item {
+  width: 218px;
+  margin-right: 20px;
+}
+
+.product-item:last-child {
+  margin-right: 0;
+}
+
 .brends {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .brends-item {
   border: 1px solid #eaeaea;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.brends-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.about {
+  width: 520px;
 }
 
 .about h2 {
@@ -294,6 +359,10 @@ a {
   line-height: 20px;
 }
 
+.contacts {
+  width: 300px;
+}
+
 .contacts h2 {
   font-size: 30px;
   line-height: 30px;
@@ -303,6 +372,14 @@ a {
 .contacts p {
   font-size: 13px;
   line-height: 24px;
+}
+
+.services {
+  background-color: #f4f8f9;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  margin-top: 85px;
+  margin-bottom: 80px;
 }
 
 .services h2,
@@ -315,6 +392,12 @@ a {
 .services p {
   font-size: 13px;
   line-height: 24px;
+}
+
+.services-menu {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
 }
 
 .services-menu-button {
@@ -335,13 +418,28 @@ a {
   color: #32425c;
 }
 
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-footer  {
   color: #ffffff;
   background-color: #32425c;
 }
 
+.main-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-bottom {
   background-color: #293449;
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -359,6 +457,11 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #f3f7f8;
+  width: 140px;
+}
+
+.copyright-since {
+  width: 220px;
 }
 
 .copyright a {
@@ -378,7 +481,10 @@ a {
 
 .main-footer-navigation,
 .additional-footer-navigation {
+  display: flex;
   list-style: none;
+  width: 550px;
+  justify-content: space-between;
 }
 
 
@@ -407,6 +513,10 @@ a {
   opacity: 0.5;
 }
 
+.social-list {
+  display: flex;
+}
+
 .social ul {
   list-style: none;
 }
@@ -424,6 +534,11 @@ a {
 .social ul a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
 }
 
 .breadcrumbs {
@@ -444,6 +559,19 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.filters {
+  width: 220px;
+}
+
+.filters ul {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog {
+  width: 700px;
 }
 
 .filters h3 {
@@ -486,6 +614,11 @@ a {
   list-style: none;
 }
 
+.sort ul {
+  padding: 0;
+  margin: 0;
+}
+
 .sort-type a {
   color: #acaaa5;
   text-transform: uppercase;
@@ -511,6 +644,11 @@ a {
 
 .product-item {
   border: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+}
+
+.product-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .product-item-title a {
@@ -535,6 +673,11 @@ a {
 
 .pagination-list {
   list-style: none;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-list a {
