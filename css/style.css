@@ -122,7 +122,7 @@ a {
   background-color: #293449;
 }
 
-.header-top .container {
+.header-top-flex {
   display: flex;
   justify-content: space-between;
 }
