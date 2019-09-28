@@ -12,9 +12,31 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .button {
@@ -38,11 +60,36 @@ a {
 
 
 .autorization-batton {
+  display: block;
   background-color: #ffffff;
   color: #000000;
 
   font-size: 21px;
   line-height: 21px;
+
+  padding: 13px 25px;
+  margin-bottom: auto;
+}
+
+.login {
+  position: relative;
+  padding-left: 45px;
+}
+
+.login::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/login.svg);
+  opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 1;
 }
 
 .autorization-batton:hover,
@@ -51,27 +98,39 @@ a {
 }
 
 .autorization-batton:active {
+  color: #000000;
   opacity: 0.3;
 }
 
-.order-options {
-  padding: 0;
+.site-search label {
+  position: relative;
 }
 
-.order-options li {
-  width: 150px;
-  list-style: none;
+.site-search label::before {
+  content: "";
 
-  font-size: 17px;
-  line-height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 17px;
+  height: 17px;
+  margin-top: -10px;
+  background-image: url(../img/search.svg);
+  opacity: 0.3;
 }
 
-.order-options a {
-  color: #ffffff;
+.site-search label:hover::before {
+  opacity: 1;
 }
 
-.order-options a:active {
-  color: #8b8e94;
+.site-search label:active::before {
+  color: #ee3643;
+}
+
+.site-search input[type="search"] {
+  padding: 10px 20px;
+  padding-left: 50px;
+  width: 270px;
 }
 
  .site-search input[type="search"] {
@@ -82,8 +141,6 @@ a {
   line-height: 18px;
 }
 
-.order-options li:hover,
-.order-options li:focus,
 .site-search input[type="search"]:hover,
 .site-search input[type="search"]:active {
   background-color: #212a3a;
@@ -94,25 +151,6 @@ a {
   background-color: #ffffff;
 }
 
-.order-options li:active {
-  color: #8b8e94;
-  background-color: #161d29;
-}
-
-.order-options li:nth-child(3) {
-  background-color: #63a63e;
-}
-
-.order-options li:nth-child(3):hover,
-.order-options li:nth-child(3):focus {
-  background-color: #5fbb2d;
-}
-
-.order-options li:nth-child(3):active {
-  color: #8b8e94;
-  background-color: #518534;
-}
-
 .main-header {
   background-color: #f3f7f9;
   padding-bottom: 60px;
@@ -120,17 +158,133 @@ a {
 
 .header-top {
   background-color: #293449;
+  margin-bottom: 45px;
 }
 
 .header-top-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
+  box-shadow: 0 5px 0 0 #b52933;
+  width: 220px;
+}
+
+.header-logo a {
+  display: block;
   font-size: 17px;
   line-height: 18px;
+  text-align: center;
+  color: #ffffff;
   text-transform: uppercase;
+  padding: 10px 50px;
+  background-color: #ee3643;
+}
+
+.header-logo a:hover,
+.header-logo:focus {
+  background-color: #ca2c37;
+}
+
+.header-logo a:active {
+  background-color: #ba2732;
+}
+
+.order-options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 17px;
+  line-height: 18px;
+  width: 460px;
+  margin: 0;
+  padding: 0;
+}
+
+.order-options a {
+  display: block;
+  color: #ffffff;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 43px;
+  padding-bottom: 10px;
+}
+
+.order-options li:nth-child(3) a {
+  padding: 10px 20px;
+}
+
+.order-options a:hover,
+.order-options a:focus {
+  background-color: #212a3a;
+}
+
+.order-options a:active {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+
+.order-options li:nth-child(3) a {
+  background-color: #63a63e;
+}
+
+.order-options li:nth-child(3) a:hover,
+.order-options li:nth-child(3) a:focus {
+  background-color: #5fbb2d;
+}
+
+.order-options li:nth-child(3) a:active {
+  opacity: 0.5;
+}
+
+.bookmarks,
+.cart {
+  position: relative;
+}
+
+.bookmarks::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -8px;
+  width: 14px;
+  height: 16px;
+  background-image: url(../img/bookmark.svg);
+  opacity: 0.3;
+}
+
+.cart::before {
+  content: "";
+
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  margin-top: -7.5px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/cart.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.bookmarks:hover::before,
+.cart:hover::before {
+  opacity: 1;
+}
+
+.bookmarks:active::before,
+.cart:active::before {
+  opacity: 0.5;
+}
+
+.description,
+.header-contacts {
+  margin: 0;
 }
 
 .description {
@@ -138,52 +292,81 @@ a {
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+  padding-left: 40px;
+}
+
+.header-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin-bottom: 45px;
+}
+
+.header-contacts {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.header-contacts span {
+  display: block;
 }
 
 .phone {
+  position: relative;
   width: 270px;
   text-align: center;
   color: #e9292a;
   font-size: 21px;
   line-height: 21px;
   border: 3px solid #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+.phone::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/phone.svg);
 }
 
 .adress {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-}
-
-.site-navigation li {
-  list-style: none;
-  padding: 20px  30px;
+  text-align: center;
 }
 
 .site-navigation {
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
   background-color: #32425c;
+  box-shadow: 0 5px 0 0 #293449;
   /*padding: 0 20px;*/
 }
 
 .site-navigation a {
+  display: block;
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
+  padding: 20px 30px;
 }
 
 .site-navigation a:hover,
-.site-navigation li:hover,
-.site-navigation a:focus,
-.site-navigation li:focus {
+.site-navigation a:focus {
   background-color: #293449;
 }
 
-.site-navigation a:active,
-.site-navigation li:active {
+.site-navigation a:active {
   background-color: #1d2739;
   color: #868c95;
 }
