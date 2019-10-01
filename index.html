@@ -105,58 +105,77 @@
           <a class="button" href="">Все популярные товары</a>
         </div>
         <ul class="product">
-          <li class="product-item">
+          <li class="product-item product-popular">
             <h3 class="product-item-title">
               <a href="">Перфоратор BOSCH BFG 9000</a>
             </h3>
-          <p>
+          <div class="image">
             <a class="product-item-image" href="">
               <img src="img/bfg9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             </a>
-          </p>
-          <p>
+            <ul class="shape">
+              <li><button class="shape-button buy" type="button">купить</button></li>
+              <li><button class="shape-button add" type="button">в закладки</button></li>
+            </ul>
+          </div>
+          <p class="cost">
             <del class="old-cost">32500 Р.</del><br>
             <b class="new-cost">25500 Р.</b>
           </p>
           </li>
-          <li class="product-item">
+
+          <li class="product-item product-popular">
             <h3 class="product-item-title">
               <a href="">Перфоратор BOSCH BFG 3000</a>
             </h3>
-          <p>
+          <div class="image">
             <a  href="">
               <img class="product-item-image" src="img/bfg3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
-          </p>
-          <p>
+            <ul class="shape">
+              <li><button class="shape-button buy" type="button">купить</button></li>
+              <li><button class="shape-button add" type="button">в закладки</button></li>
+            </ul>
+          </div>
+            <p class="cost">
             <del class="old-cost">22500 Р.</del><br>
             <b class="new-cost">15500 Р.</b>
           </p>
           </li>
-          <li class="product-item">
+
+          <li class="product-item product-popular">
             <h3 class="product-item-title">
               <a href="">Перфоратор BOSCH BFG 6000</a>
             </h3>
-          <p>
+          <div class="image">
             <a href="">
               <img class="product-item-image" src="img/bfg6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
-          </p>
-          <p>
+            <ul class="shape">
+              <li><button class="shape-button buy" type="button">купить</button></li>
+              <li><button class="shape-button add" type="button">в закладки</button></li>
+            </ul>
+          </div>
+          <p class="cost">
             <del class="old-cost">30500 Р.</del><br>
             <b class="new-cost">25500 Р.</b>
           </p>
           </li>
-          <li class="product-item">
+
+          <li class="product-item product-popular">
             <h3 class="product-item-title">
               <a  href="">Перфоратор BOSCH BFG 2000</a>
             </h3>
-          <p>
+          <div class="image">
             <a href="">
               <img class="product-item-image" src="img/bfg2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
-          </p>
-          <p>
+            <ul class="shape">
+              <li><button class="shape-button buy" type="button">купить</button></li>
+              <li><button class="shape-button add" type="button">в закладки</button></li>
+            </ul>
+          </div>
+          <p class="cost">
             <b class="new-cost">12500 Р.</b>
           </p>
           </li>
@@ -256,15 +275,15 @@
     	</section>
       </div>
 
-      <section class="modal">
-        <div class="container">
-        <h2 class="visualy-hidden">Обратная Связь</h2>
-        <p class="modal-map">
-          <img class="map" src="img/map_big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          <button class="modal-close" type="button"></button>
-        </p>
+      <section class="modal-map">
+        <img class="map" src="img/map_big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <button class="modal-close" type="button"></button>
+      </section>
+
+      <section class="modal modal-cart">
+        <h2 class="visually-hidden">Обратная Связь</h2>
         <div class="modal-write-us">
-          <div class="write-us-container">
+        <div class="modal-container">
         <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
           <p>
             <label>
@@ -288,15 +307,13 @@
           </p>
         </div>
           <div class="modal-footer">
-            <div class="write-us-container">
+            <div class="modal-container">
           <button class="button modal-btn" type="submit">Отправить</button>
         </div>
         </div>
         </form>
       </div>
-      </div>
       </section>
-
 
     </main>
 
