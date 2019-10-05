@@ -475,11 +475,18 @@ img {
 }
 
 .offers {
-  list-style: none;
+  display: flex;
+}
+
+.offers .left-column {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  width: 620px;
+  margin-right: 20px;
+}
+
+.offers .right-column {
+  width: 300px;
 }
 
 .offers-item {
@@ -499,25 +506,23 @@ img {
   margin-right: 0;
 }
 
-.offers li:nth-child(1),
-.offers li:nth-child(5) {
+.offers .materials,
+.offers .delivery {
   background-color: #ffbf47;
 }
 
-.offers li:nth-child(2) {
+.offers .tools {
   background-color: #3bbce3;
+  margin-right: 0;
 }
 
-.offers li:nth-child(3) {
+.offers .technics {
   background-color: #dc91d8;
 }
 
-.offers li:nth-child(6) {
+.offers .sale {
   background-color: #8ed78f;
-}
-
-.offers-item:nth-child(4) {
-  width: 620px;
+  margin-right: 0;
 }
 
 .offers-title {
@@ -531,7 +536,7 @@ img {
 .offers-icon {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 20px;
   margin-top: -31px;
 }
 
@@ -560,11 +565,13 @@ img {
 }
 
 .slider {
-  width: 100%;
+  width: 620px;
+  min-height: 266px;
   background-image: url(../img/slide_1.jpg);
- /* background-position: 0, 0;
+  background-position: 0, 0;
   background-repeat: no-repeat;
-  background-size: contain;*/
+  background-size: cover;
+  padding: 25px;
 }
 
 .slider-title {
@@ -573,17 +580,24 @@ img {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .slider p {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+  margin: 0;
 }
 
 .popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f9f5f0;
   margin-bottom: 20px;
+  padding: 0 23px;
 }
 
 .popular-header h2 {
@@ -591,6 +605,14 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+}
+
+.popular-btn {
+  display: block;
+  width: 253px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 3px;
 }
 
 .product {
@@ -791,10 +813,21 @@ img {
 }
 
 .brends-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #eaeaea;
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.brends-item:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brends-item:active {
+  opacity: 0.3;
 }
 
 .brends-item:nth-child(4n) {
@@ -884,6 +917,61 @@ img {
 .columns {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.columns .about,
+.columns .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.columns .about {
+  width: 520px;
+  margin-right: 120px;
+}
+
+.about .delivery-company {
+  margin-bottom: 20px;
+}
+
+.about .delivery-company li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.about .delivery-company li::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -36px;
+  margin-top: -1px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+
+}
+
+.columns .contacts {
+  width: 300px;
+}
+
+.columns .contacts img {
+  margin-bottom: 40px;
+}
+
+.about-btn,
+.contacts-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 3px;
+}
+
+.about-btn {
+  width: 220px;
 }
 
 .main-footer  {
