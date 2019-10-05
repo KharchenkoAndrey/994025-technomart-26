@@ -13,6 +13,7 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -220,7 +221,7 @@ img {
   padding-bottom: 10px;
 }
 
-.order-options li:nth-child(3) a {
+.order-options .order {
   padding: 10px 20px;
 }
 
@@ -234,16 +235,16 @@ img {
   background-color: #161d29;
 }
 
-.order-options li:nth-child(3) a {
+.order-options .order {
   background-color: #63a63e;
 }
 
-.order-options li:nth-child(3) a:hover,
-.order-options li:nth-child(3) a:focus {
+.order-options .order:hover,
+.order-options .order:focus {
   background-color: #5fbb2d;
 }
 
-.order-options li:nth-child(3) a:active {
+.order-options .order:active {
   opacity: 0.5;
 }
 
@@ -319,6 +320,7 @@ img {
 }
 
 .phone {
+  display: block;
   position: relative;
   width: 270px;
   text-align: center;
@@ -481,7 +483,14 @@ img {
 }
 
 .offers-item {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 300px;
+  padding: 20px;
   margin-right: 20px;
   margin-bottom: 30px;
 }
@@ -507,34 +516,55 @@ img {
   background-color: #8ed78f;
 }
 
+.offers-item:nth-child(4) {
+  width: 620px;
+}
+
 .offers-title {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.offers-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -31px;
 }
 
 .promo-button {
+  display: block;
+  width: 135px;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 10px 0;
+  order: 1;
+  margin-bottom: auto;
 }
 
 .promo-button:hover,
 .promo-button:focus {
-  background-color: #cccccc;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .promo-button:active {
-  background-color: #b2b2b2;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slider {
+  width: 100%;
   background-image: url(../img/slide_1.jpg);
-  background-position: 0, 0;
+ /* background-position: 0, 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain;*/
 }
 
 .slider-title {
@@ -619,6 +649,7 @@ img {
 }
 
 .shape .shape-button {
+  display: block;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1301,6 +1332,8 @@ img {
 }
 
 .modal {
+  position: fixed;
+  display: none;
   width: 620px;
   margin: 0 auto;
   border-top: 7px solid #ee3643;
@@ -1335,7 +1368,8 @@ img {
 }
 
 .modal-map {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 2347px;
   left: 50%;
   margin-left: -470px;
