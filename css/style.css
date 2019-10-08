@@ -1342,8 +1342,59 @@ img {
   cursor: pointer;
 }
 
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f3ec;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.sort h2 {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.sort-switch input {
+  display: none;
+}
+
+.sort-switch input + label {
+  cursor: pointer;
+}
+
+.sort-switch label {
+  position: relative;
+}
+
+.sort-switch label::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid #000000;
+  opacity: 0.3;
+}
+
 .sort-type {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+}
+
+.sort-type li {
+  margin-right: 65px;
+}
+
+.sort-type li:last-child {
+  margin-right: 0;
 }
 
 .sort ul {
@@ -1352,7 +1403,7 @@ img {
 }
 
 .sort-type a {
-  color: #acaaa5;
+  color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
@@ -1370,7 +1421,12 @@ img {
   border-bottom: none;
 }
 
+.pagination {
+  margin-bottom: 60px;
+}
+
 .pagination-list {
+  display: flex;
   list-style: none;
 }
 
@@ -1384,10 +1440,16 @@ img {
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
+  border: 1px solid #e5e5e5;
+  padding: 10px 15px;
 }
 
-.pagination-list a {
-  border: 1px solid #e5e5e5;
+.pagination-item {
+  margin-right: 10px;
+}
+
+.pagination-item .next-btn {
+  padding: 10px  30px;
 }
 
 .pagination-item a:hover,
@@ -1406,6 +1468,7 @@ img {
 
 .about-perforator {
   background-color: #f2f6f8;
+  padding: 65px 0;
 }
 
 .about-perforator h2 {
