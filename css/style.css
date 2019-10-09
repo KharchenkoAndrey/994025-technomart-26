@@ -1213,12 +1213,160 @@ img {
   width: 700px;
 }
 
-.filters h3 {
-  font-size: 17px;
-  line-height: 30px;
+.filters h2 {
+  font-size: 13px;
+  line-height: 18px;
   text-transform: uppercase;
-  font-weight: 700;
+  vertical-align: middle;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+  padding: 13px 0 13px 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+
+
+.filter-range {
+
+}
+
+.price-controls {
+  display: flex;
+  position: relative;
+
+  font-size: 0;
+
+  border-radius: 3px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 10px;
+  height: 1px;
+
+  background: #000000;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 17px;
+  line-height: 18px;
+  vertical-align: middle;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 95px;
+  background-color: #f7f3ec;
+  padding: 10px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.price-controls .min-price {
+  margin-right: 30px;
+}
+
+.price-controls input {
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+
+
+
+
+
+
+
 
 .filters,
 .catalogs {
@@ -1358,29 +1506,7 @@ img {
   text-transform: uppercase;
   vertical-align: middle;
   margin: 0;
-}
-
-.sort-switch input {
-  display: none;
-}
-
-.sort-switch input + label {
-  cursor: pointer;
-}
-
-.sort-switch label {
-  position: relative;
-}
-
-.sort-switch label::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 5px solid transparent;
-  border-top: 5px solid #000000;
-  opacity: 0.3;
+  margin-right: 135px;
 }
 
 .sort-type {
@@ -1419,6 +1545,39 @@ img {
 .sort-type a:active {
   color: #ee3643;
   border-bottom: none;
+}
+
+.sort-switch {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.sort-switch li {
+  margin-right: 30px;
+}
+
+.sort-switch li:last-child {
+  margin-right: 0;
+}
+
+.sort-switch a polyline {
+  fill: #c5c5c5;
+}
+
+.sort-switch a:hover polygon,
+.sort-switch a:hover polyline {
+  fill: #000000;
+}
+
+.sort-switch a:active polygon,
+.sort-switch a:active polyline {
+  fill: #ee3643;
+}
+
+.sort-switch .active polygon {
+  fill: #ee3643;
+  opacity: 1;
 }
 
 .pagination {

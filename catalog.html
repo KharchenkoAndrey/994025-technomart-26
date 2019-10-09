@@ -72,9 +72,30 @@
 
   <div class="catalog-columns">
     <section class="filters">
-    	<h2 class="visually-hidden">Фильтр товаров</h2>
-      <h3>Цена:</h3>
+      <h2>Фильтр:</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Цена:</legend>
+
+          <div class="filter-range">
+          <div class="price-controls">
+            <label class="min-price">0
+              <input type="text" name="min-price"></label>
+            <label class="max-price">3000
+              <input type="text" name="max-price">
+            </label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+            <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+
+        </fieldset>
         <fieldset>
           <legend>Производители:</legend>
           <ul>
@@ -128,12 +149,22 @@
         <li><a href="">по типу</a></li>
         <li><a href="">по функционалу</a></li>
       </ul>
-      <div class="sort-switch">
-      <input id="up" type="radio">
-      <label for="up"></label>
-      <input id="down" type="radio">
-      <label for="down"></label>
-      </div>
+      <ul class="sort-switch">
+        <li><a class="active" href="">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+          <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+          </svg>
+        </a>
+        </li>
+        <li><a href="">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+          <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+          </svg>
+        </a>
+        </li>
+      </ul>
     </section>
 
     		<ul class="product">
