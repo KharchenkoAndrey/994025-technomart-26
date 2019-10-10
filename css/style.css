@@ -1204,6 +1204,13 @@ img {
   width: 220px;
 }
 
+.filters hr {
+  margin-bottom: 25px;
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+}
+
 .filters ul {
   margin: 0;
   padding: 0;
@@ -1225,95 +1232,63 @@ img {
   margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
 .filter-range {
-
+  margin-bottom: 25px;
 }
 
 .price-controls {
-  display: flex;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+}
 
-  font-size: 0;
-
-  border-radius: 3px;
+.price-controls input {
+  box-sizing: border-box;
+  width: 95px;
+  text-align: center;
+  border: none;
+  background-color: #f7f3ec;
+  padding: 10px 0;
 }
 
 .price-controls::after {
   content: "";
+
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 50%;
+  margin-right: -5px;
 
   width: 10px;
   height: 1px;
-
-  background: #000000;
-}
-
-.price-controls label {
-  display: inline-block;
-
-  font-size: 17px;
-  line-height: 18px;
-  vertical-align: middle;
-
-  cursor: pointer;
-}
-
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 95px;
-  background-color: #f7f3ec;
-  padding: 10px 0;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.price-controls .min-price {
-  margin-right: 30px;
-}
-
-.price-controls input {
-  margin: 0;
-
-  color: inherit;
-  font: inherit;
-
-  background: none;
-  border: none;
-  outline: none;
+  background-color: #000000;
 }
 
 .range-controls {
+  background-color: #f7f3ec;
+  padding: 30px 20px;
+  border-radius: 3px;
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 10px;
 }
 
 .range-controls .scale {
   height: 2px;
 
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(215, 220, 222, 1);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
 
-  background: #ffffff;
+  background: #00ca74;
 }
 
 .range-toggle {
   position: absolute;
-  top: -9px;
+  top: 21px;
 
   width: 4px;
   height: 4px;
@@ -1325,48 +1300,13 @@ img {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background: #1c4f80;
-}
-
 .range-toggle-min {
-  left: 0;
+  left: 20px;
 }
 
 .range-toggle-max {
-  left: 80%;
+  right: 50px;
 }
-
-.btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  outline: none;
-  cursor: pointer;
-}
-
-.btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
-}
-
-
-
-
-
-
-
-
 
 .filters,
 .catalogs {
@@ -1488,6 +1428,7 @@ img {
   background-color: #ffffff;
 
   cursor: pointer;
+  margin-top: 75px;
 }
 
 .sort {
