@@ -240,16 +240,51 @@
       <section class="services">
       <div class="container">
         <h2>Сервисы</h2>
-        <p>Сервисы. Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        <p>Сервисы. Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <div class="services-menu">
-          <button class="services-menu-button" type="button">Доставка</button>
-          <button class="services-menu-button" type="button">Гарантия</button>
-          <button class="services-menu-button" type="button">Кредит</button>
-        </div>
+        <div class="tabs">
+          <input id="tab1" type="radio" name="tab" checked>
+          <label for="tab1">Доставка</label>
+          <input id="tab2" type="radio" name="tab">
+          <label for="tab2">Гарантия</label>
+          <input id="tab3" type="radio" name="tab">
+          <label for="tab3">Кредит</label>
+
+        <section class="tabs-content delivery">
+        <div class="tabs-content-description">
         <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-        <img src="https://via.placeholder.com/468x261" width="468" height="261" alt="иконка" >
+        <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+        </div>
+        <div class="tabs-content-img">
+        <img src="img/truck.png" width="468" height="261" alt="иконка" >
+        </div>
+        </section>
+
+        <section class="tabs-content warranty">
+        <div class="tabs-content-description">
+        <h3>Гарантия</h3>
+        <p>Если купленный у нас товар поломается или заискрит,<br>
+        а также в случае пожара, спровоцированного его возгоранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br>
+        Дом уж восстановите как-нибудь сами.</p>
+        </div>
+        <div class="tabs-content-img">
+        <img src="img/warranty.png" width="468" height="261" alt="иконка" >
+        </div>
+        </section>
+
+        <section class="tabs-content credit">
+        <div class="tabs-content-description">
+        <h3>Кредит</h3>
+        <p>Залезть в долговую яму стало проще!<br>
+        Кредитные консультанты придут вам на помощь.</p>
+        <a class="button tab-btn" href="">Отправить заявку</a>
+        </div>
+        <div class="tabs-content-img">
+        <img src="img/credit.png" width="468" height="261" alt="иконка" >
+        </div>
+        </section>
+
+      </div>
       </div>
       </section>
 

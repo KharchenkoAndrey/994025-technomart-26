@@ -878,8 +878,7 @@ img {
   margin-bottom: 80px;
 }
 
-.services h2,
-.services h3 {
+.services h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -890,28 +889,85 @@ img {
   line-height: 24px;
 }
 
-.services-menu {
-  display: flex;
-  flex-direction: column;
-  width: 240px;
+.tabs {
+  position: relative;
+  margin-top: 70px;
 }
 
-.services-menu-button {
-  background-color: #32425c;
-  color: #ffffff;
+.tabs input + label {
+  cursor: pointer;
+}
+
+.tabs input {
+  display: none;
+}
+
+.tabs label {
+  box-sizing: border-box;
+  display: block;
   font-size: 21px;
   line-height: 30px;
-  font-weight: 700;
+  color: #ffffff;
+  width: 240px;
+  background-color: #32425c;
+  padding: 15px 0;
+  padding-left: 20px;
+  margin-bottom: 2px;
+  box-shadow:
+  0 1px 0 0 #293449, 0 -1px 0 0 #405069;
 }
 
-.services-menu-button:hover,
-.services-menu-button:focus {
+.tabs label:hover,
+.tabs label:focus {
   background-color: #293449;
 }
 
-.services-menu-button:active {
+.tabs input + label:active,
+.tabs input:checked + label {
   background-color: #ffffff;
   color: #32425c;
+  box-shadow: none;
+}
+
+.tabs-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 620px;
+  display: none;
+}
+
+.tabs-content-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tabs-content-img {
+  margin-left: 150px;
+}
+
+.tabs-content h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  margin: 0;
+}
+
+#tab1:checked ~ .delivery,
+#tab2:checked ~ .warranty,
+#tab3:checked ~ .credit {
+ display: flex;
+ position: absolute;
+ top: 0;
+ right: 0;
+}
+
+.tab-btn {
+  padding: 10px 45px;
+  border-radius: 3px;
 }
 
 .columns {
