@@ -512,7 +512,7 @@ img {
   padding: 20px;
   margin-right: 20px;
   margin-bottom: 30px;
-  min-height: 123px;
+  /*min-height: 123px;*/
 }
 
 .offers-item:nth-child(3n) {
@@ -553,6 +553,10 @@ img {
   margin-top: -31px;
 }
 
+.promo {
+  margin-bottom: 25px;
+}
+
 .promo-button {
   display: block;
   width: 135px;
@@ -565,7 +569,7 @@ img {
   border-radius: 3px;
   padding: 10px 0;
   order: 1;
-  margin-bottom: auto;
+  /*margin-bottom: auto;*/
 }
 
 .promo-button:hover,
@@ -635,7 +639,9 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 25px;
-  min-height: 276px;
+  width: 620px;
+  height: 266px;
+  /*min-height: 276px;*/
 }
 
 .slide2 {
@@ -679,16 +685,21 @@ img {
   justify-content: space-between;
 }
 
+.popular {
+  margin-bottom: 25px;
+}
+
 .popular-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f9f5f0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding: 0 23px;
 }
 
 .popular-header h2 {
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -717,11 +728,12 @@ img {
   width: 220px;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   border: 1px solid #e5e5e5;
-  margin-right: 20px;
+  /*margin-right: 20px;
   margin-bottom: 30px;
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 30px;*/
 }
 
 .product-item:hover {
@@ -744,8 +756,8 @@ img {
   justify-content: center;
   position: absolute;
   top: 0px;
-  left: -30px;
-  width: 218px;
+  left: 0;
+  width: 216px;
   height: 130px;
   background-color: #ffffff;
   padding: 0;
@@ -831,7 +843,7 @@ img {
 }
 
 .product-popular {
-  width: 218px;
+  width: 220px;
   margin-right: 20px;
   border: 1px solid #e5e5e5;
 }
@@ -849,10 +861,13 @@ img {
 }
 
 .product-item-title a {
+  display: block;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .cost {
@@ -901,13 +916,15 @@ img {
 }
 
 .brends-item {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #eaeaea;
-  width: 218px;
+  width: 220px;
   margin-right: 20px;
   margin-bottom: 20px;
+  min-height: 145px;
 }
 
 .brends-item:hover {
@@ -962,11 +979,12 @@ img {
   background-color: #f4f8f9;
   padding-top: 60px;
   padding-bottom: 100px;
-  margin-top: 85px;
+  margin-top: 48px;
   margin-bottom: 80px;
 }
 
 .services h2 {
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -978,8 +996,9 @@ img {
 }
 
 .tabs {
+  /*font-family: "PT Sans", Arial, sans-serif;*/
   position: relative;
-  margin-top: 70px;
+  margin-top: 67px;
 }
 
 .tabs input + label {
@@ -1042,11 +1061,13 @@ height: auto;
 }
 
 .tabs-content h3 {
-  font-size: 30px;
-  line-height: 30px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
   text-transform: uppercase;
   color: #32425c;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 #tab1:checked ~ .delivery,
