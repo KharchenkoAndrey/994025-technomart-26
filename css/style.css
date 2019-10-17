@@ -176,11 +176,6 @@ img {
 .header-logo a,
 .footer-logo a {
   display: block;
-  font-size: 17px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
   padding: 10px 55px;
   background-color: #ee3643;
 }
@@ -188,6 +183,12 @@ img {
 .footer-logo a {
   padding: 20px 40px;
 }
+
+.footer-logo {
+  width: 220px;
+  margin-bottom: 30px;
+}
+
 
 .header-logo a:hover,
 .header-logo:focus {
@@ -395,7 +396,7 @@ img {
 .user {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  width: 280px;
 }
 
 .user-name {
@@ -1105,8 +1106,18 @@ height: auto;
   margin-right: 120px;
 }
 
+.columns .about h2,
+.columns .contacts h2 {
+  margin: 0;
+}
+
+.columns .about h2 {
+  margin-bottom: 10px;
+}
+
 .about .delivery-company {
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .about .delivery-company li {
@@ -1181,12 +1192,6 @@ height: auto;
   justify-content: space-between;
 }
 
-.footer-logo {
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 30px;
-}
-
 .footer-adress {
   margin: 0;
 }
@@ -1203,11 +1208,15 @@ height: auto;
   font-size: 16px;
   line-height: 18px;
   color: #f3f7f8;
-  width: 140px;
+  /*width: 140px;*/
+}
+
+.copyright .feedback {
+  margin-right: -55px;
 }
 
 .copyright-since {
-  width: 220px;
+  /*width: 220px;*/
 }
 
 .copyright a {
@@ -1233,7 +1242,7 @@ height: auto;
 }
 
 .additional-footer-navigation li {
-  padding-top: 25px;
+  padding-top: 34px;
 }
 
 .additional-footer-navigation  li:first-child a {
@@ -1269,6 +1278,8 @@ height: auto;
 .social {
   display: flex;
   align-items: center;
+  margin-left: 132px;
+  margin-right: 50px;
 }
 
 .social-list {
@@ -1276,9 +1287,12 @@ height: auto;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  width: 130px;
+ /* width: 130px;*/
 }
 
+.social-list li {
+  margin-right: 3px;
+}
 
 .social-list a {
   background-color: #212a3a;
