@@ -45,9 +45,9 @@
 
     	<nav class="main-navigation">
     		<ul class="site-navigation">
-    			<li><a href="">Главная</a></li>
+    			<li><a href="index.html">Главная</a></li>
     			<li><a href="">Компания</a></li>
-    			<li><a href="">Каталог</a></li>
+    			<li><a href="catalog.html">Каталог</a></li>
     			<li><a href="">Новости</a></li>
     			<li><a href="">Спецпредложения</a></li>
     			<li><a href="">Доставка</a></li>
@@ -352,13 +352,15 @@
     	<section class="contacts">
     		<h2>Контакты</h2>
     		<p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+      <a class="open-map" href="">
 			<img src="img/map.jpg" width="300" height="158" alt="">
+      </a>
 			<a class="button contacts-btn" href="">Заблудились?Напишите  нам</a>
     	</section>
       </div>
 
       <section class="modal-map">
-        <img class="map" src="img/map_big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123647!2d30.32089461561842!3d59.938796869048474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1571498636937!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         <button class="modal-close" type="button"></button>
       </section>
 
@@ -387,11 +389,24 @@
               </textarea>
             </label>
           </p>
-        </form>
           </div>
           <div class="modal-footer">
           <div class="modal-container">
           <button class="button modal-btn" type="submit">Отправить</button>
+        </div>
+        </div>
+        </form>
+      </section>
+
+      <section class="modal modal-cart">
+        <div class="modal-container">
+        <h2>Товар добавлен в корзину!</h2>
+        <button class="modal-close" type="button"></button>
+        </div>
+        <div class="modal-footer">
+        <div class="modal-container">
+          <a class="button cart-btn-get" href="">Оформить заказ</a>
+          <a class="button cart-btn-continue" href="catalog.html">Продолжить покупки</a>
         </div>
         </div>
       </section>
@@ -413,7 +428,7 @@
     	<ul class="main-footer-navigation">
     		<li><a href="">Компания</a></li>
     		<li><a href="">Новости</a></li>
-    		<li><a href="">Каталог</a></li>
+    		<li><a href="catalog.html">Каталог</a></li>
     		<li><a href="">Доставка</a></li>
     		<li><a href="">Контакты</a></li>
     	</ul>
@@ -482,6 +497,8 @@
       </div>
       </div>
     </footer>
-
+    <script src="js/write-us.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
