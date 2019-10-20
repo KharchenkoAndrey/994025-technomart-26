@@ -71,13 +71,17 @@ img {
   line-height: 21px;
 
   padding: 13px 25px;
-  margin-bottom: auto;
 }
 
 .login {
   position: relative;
   padding-left: 42px;
   margin-right: 5px;
+  margin-bottom: 30px;
+}
+
+.enter {
+  margin-bottom: 30px;
 }
 
 .login::before {
@@ -223,12 +227,13 @@ img {
   color: #ffffff;
   padding-left: 45px;
   padding-top: 8px;
-  padding-right: 40px;
+  padding-right: 28px;
   padding-bottom: 10px;
+  min-height: 19px;
 }
 
 .order-options .order {
-  padding: 8px 21px;
+  padding: 10px 21px;
 }
 
 .order-options a:hover,
@@ -257,6 +262,10 @@ img {
 .bookmarks,
 .cart {
   position: relative;
+}
+
+.order-options .red {
+  background-color: #ee3643;
 }
 
 .bookmarks::before {
@@ -312,12 +321,15 @@ img {
 
 .header-about {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -webkit-box-align: top;
-  align-items: top;
-  margin-bottom: 39px;
+  -ms-flex-align: top;
+      align-items: top;
+ margin-bottom: 39px;
 }
 
 .header-contacts {
@@ -414,9 +426,11 @@ img {
 }
 
 .user-name {
+  box-sizing: border-box;
   position: relative;
-  width: 100%;
+  min-width: 300px;
   text-align: center;
+  margin-left: -20px;
 }
 
 .user-name::before {
@@ -537,6 +551,18 @@ img {
   margin-right: 20px;
   margin-bottom: 30px;
   /*min-height: 123px;*/
+}
+
+ .left-column .offers-item:nth-child(1)::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 59px;
+  background-image: url(../img/newflag.png);
 }
 
 .offers-item:nth-child(3n) {
@@ -719,7 +745,7 @@ img {
 }
 
 .popular {
-  margin-bottom: 25px;
+ margin-bottom: -3px;
 }
 
 .popular-header {
@@ -751,15 +777,18 @@ img {
 }
 
 .product {
+  font-family: "PT Sans", Arial, sans-serif;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 37px;
 }
 
 .product-item {
+  position: relative;
   box-sizing: border-box;
   display: -webkit-box;
   display: flex;
@@ -772,10 +801,23 @@ img {
   justify-content: space-around;
   border: 1px solid #e5e5e5;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   /*
   padding-left: 30px;
   padding-right: 30px;*/
+}
+
+.product-item:nth-child(5)::after,
+.product-item:nth-child(7)::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 59px;
+  background-image: url(../img/newflag.png);
 }
 
 .product-item:hover {
@@ -892,6 +934,7 @@ img {
 }
 
 .product-popular {
+  position: relative;
   width: 220px;
   margin-right: 20px;
   border: 1px solid #e5e5e5;
@@ -905,32 +948,50 @@ img {
   margin-right: 0;
 }
 
+.product-popular:last-child::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 59px;
+  background-image: url(../img/newflag.png);
+}
+
 .product-item-title {
+  font-weight: normal;
   text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 100%;
 }
 
 .product-item-title a {
-  display: block;
+  /*display: block;*/
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #000000;
-  padding-left: 20px;
-  padding-right: 30px;
+  /*padding-left: 10px;
+  padding-right: 20px;*/
 }
 
 .cost {
   margin-top: auto;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
 .old-cost {
-  display: inline-block;
+  display: block;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
-  padding-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: -3px;
 }
 
 .new-cost {
@@ -939,7 +1000,7 @@ img {
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
-  padding: 10px 35px;
+  padding: 10px 28px;
   border-radius: 3px;
 }
 
@@ -1245,7 +1306,7 @@ height: auto;
   flex-wrap: no-wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .footer-bottom {
@@ -1485,7 +1546,7 @@ height: auto;
 }
 
 .filters hr {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   height: 1px;
   background-color: #e5e5e5;
   border: none;
@@ -1665,7 +1726,7 @@ height: auto;
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 
@@ -1711,7 +1772,7 @@ height: auto;
   background-color: #ffffff;
 
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 64px;
 }
 
 .sort {
@@ -1860,7 +1921,7 @@ height: auto;
 
 .about-perforator {
   background-color: #f2f6f8;
-  padding: 65px 0;
+  padding: 50px 0 55px 0;
 }
 
 .about-perforator h2 {
