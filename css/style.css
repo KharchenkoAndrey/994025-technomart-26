@@ -18,6 +18,13 @@ img {
   height: auto;
 }
 
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+ display: none;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -114,33 +121,25 @@ img {
   position: relative;
 }
 
-.site-search label::before {
-  content: "";
-
+.site-search svg {
   position: absolute;
   top: 50%;
   left: 15px;
-  width: 17px;
-  height: 17px;
   margin-top: -10px;
-  background-image: url(../img/search.svg);
-  opacity: 0.3;
-}
 
-.site-search label:hover::before {
-  opacity: 1;
-}
-
-.site-search label:active::before {
-  color: #ee3643;
 }
 
 .site-search input[type="search"] {
-  padding: 8px 20px;
+  padding: 11px 20px;
   padding-left: 49px;
   width: 270px;
   background-color: #293449;
   border: none;
+  outline: none;
+  min-height: 19px;
+}
+
+.site-search input[type="search"]::placeholder {
   color: #ffffff;
   font-size: 17px;
   line-height: 18px;
@@ -154,6 +153,15 @@ img {
 .site-search input[type="search"]:focus {
   color: #000000;
   background-color: #ffffff;
+}
+
+.site-search input[type="search"]:hover + .search-icon path,
+.site-search input[type="search"]:active + .search-icon path {
+  fill: #ffffff;
+}
+
+.site-search input[type="search"]:focus + .search-icon path {
+fill: #ee3643;
 }
 
 .main-header {
@@ -226,7 +234,7 @@ img {
   display: block;
   color: #ffffff;
   padding-left: 45px;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-right: 28px;
   padding-bottom: 10px;
   min-height: 19px;
@@ -266,6 +274,7 @@ img {
 
 .order-options .red {
   background-color: #ee3643;
+  padding-right: 29px;
 }
 
 .bookmarks::before {
@@ -431,6 +440,25 @@ img {
   min-width: 300px;
   text-align: center;
   margin-left: -20px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.exit-btn {
+  position: relative;
+}
+
+.exit-btn::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  width: 20px;
+  height: 18px;
+  margin-top: -9px;
+  background-image: url(../img/icon-logout.svg);
+  opacity: 0.3;
 }
 
 .user-name::before {
@@ -446,31 +474,24 @@ img {
   opacity: 0.3;
 }
 
-.user-name::after {
-  content: "";
-
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  width: 20px;
-  height: 18px;
-  margin-top: -9px;
-  background-image: url(../img/login.svg);
-  opacity: 0.3;
-}
-
-.user-name:hover::before,
-.user-name:hover::after {
+.user-name:hover::before {
   opacity: 1;
 }
 
-.user-name:active::before,
-.user-name:active::after {
+.user-name:active::before {
   opacity: 0.3;
 }
 
 .user-name:hover {
   color: #000000;
+}
+
+.exit-btn:hover::before {
+  opacity: 1;
+}
+
+.exit-btn:active::before {
+  opacity: 0.3;
 }
 
 .user-navigation {
@@ -486,6 +507,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
+  color: #32425c;
 }
 
 .user-navigation li:first-child a {
@@ -862,6 +884,7 @@ img {
 }
 
 .shape .shape-button {
+  font-family: "Cuprum", Arial, sans-serif;
   display: block;
   font-size: 14px;
   line-height: 18px;
@@ -964,9 +987,11 @@ img {
   font-weight: normal;
   text-align: center;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 20px;
   width: 100%;
+  font-size: 0;
+  margin: 0;
 }
 
 .product-item-title a {
@@ -1593,6 +1618,10 @@ height: auto;
   border: none;
   background-color: #f7f3ec;
   padding: 10px 0;
+}
+
+.price-controls .min-price {
+  margin-right: 25px;
 }
 
 .price-controls::after {
