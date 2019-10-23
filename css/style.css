@@ -145,6 +145,12 @@ input::-webkit-search-results-decoration {
   line-height: 18px;
 }
 
+:-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+}
+
 .site-search input[type="search"]:hover,
 .site-search input[type="search"]:active {
   background-color: #212a3a;
@@ -805,6 +811,10 @@ fill: #ee3643;
   margin-left: 5px;
 }
 
+.popular-brends {
+  margin-top: 0;
+}
+
 .popular-btn {
   display: block;
   width: 253px;
@@ -821,7 +831,7 @@ fill: #ee3643;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 40px;
+ margin-bottom: 9px;
 }
 
 .product-item {
@@ -1211,8 +1221,12 @@ fill: #ee3643;
 }
 
 .tabs-content-img {
-  margin-top: 25px;
+  /*margin-top: 25px;*/
   margin-left: 150px;
+}
+
+.delivery .tabs-content-img {
+  margin-top: 25px;
 }
 
 .tabs-content-img img {
