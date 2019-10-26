@@ -341,9 +341,6 @@ fill: #ee3643;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -webkit-box-align: top;
-  -ms-flex-align: top;
-      align-items: top;
  margin-bottom: 37px;
 }
 
@@ -1396,7 +1393,7 @@ height: auto;
 .footer-flex {
   display: -webkit-box;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
   margin-bottom: 40px;
