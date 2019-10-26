@@ -788,7 +788,8 @@ fill: #ee3643;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-top: -25px;
+  margin-top: 28px;
+  margin-bottom: 48px;
 }
 
 .popular {
