@@ -378,7 +378,7 @@
         <h2 class="visually-hidden">Обратная Связь</h2>
         <button class="modal-close" type="button"></button>
         <div class="modal-container">
-          <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
+          <form id="write-us" class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
           <p>
             <label>
               Ваше имя:<br>
@@ -399,12 +399,12 @@
               </textarea>
             </label>
           </p>
-          <div class="modal-footer">
-          <div class="modal-container">
-          <button class="button modal-btn" type="submit">Отправить</button>
-        </div>
-        </div>
         </form>
+        </div>
+        <div class="modal-footer">
+          <div class="modal-container">
+          <button class="button modal-btn" type="submit" form="write-us">Отправить</button>
+        </div>
         </div>
         </section>
 
