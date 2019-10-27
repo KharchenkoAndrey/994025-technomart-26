@@ -172,8 +172,8 @@ fill: #ee3643;
 
 .main-header {
   background-color: #f3f7f9;
-  padding-bottom: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 63px;
+  margin-bottom: 59px;
 }
 
 .header-top {
@@ -331,7 +331,7 @@ fill: #ee3643;
   font-style: italic;
   color: #ee3643;
   padding-left: 53px;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 
 .header-about {
@@ -393,6 +393,7 @@ fill: #ee3643;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: -1px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -739,7 +740,7 @@ fill: #ee3643;
   background-position: 0, 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 25px;
+  padding: 25px 25px 22px;
   width: 620px;
   /*height: 266px;*/
   min-height: 266px;
@@ -763,6 +764,7 @@ fill: #ee3643;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
+  margin-top: -2px;
   margin-bottom: 2px;
 }
 
@@ -788,7 +790,7 @@ fill: #ee3643;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-top: 28px;
+  margin-top: 23px;
   margin-bottom: 48px;
 }
 
@@ -804,8 +806,8 @@ fill: #ee3643;
   -webkit-box-align: center;
   align-items: center;
   background-color: #f9f5f0;
-  margin-top: 38px;
-  margin-bottom: 24px;
+  margin-top: 37px;
+  margin-bottom: 25px;
   padding: 0 25px;
 }
 
@@ -815,11 +817,12 @@ fill: #ee3643;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .popular-brends {
   margin-top: 0;
+  margin-bottom: 23px;
 }
 
 .popular-btn {
@@ -1162,9 +1165,9 @@ fill: #ee3643;
 .services {
   font-family: "PT Sans",Arial, sans-serif;
   background-color: #f4f8f9;
-  padding-top: 60px;
+  padding-top: 41px;
   padding-bottom: 100px;
-  margin-top: 50px;
+  margin-top: 69px;
   margin-bottom: 80px;
 }
 
@@ -1180,7 +1183,6 @@ fill: #ee3643;
 .services p {
   font-size: 13px;
   line-height: 24px;
-  margin-left: 1px;
 }
 
 .tabs {
@@ -1198,6 +1200,8 @@ fill: #ee3643;
 }
 
 .tabs label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: bold;
   box-sizing: border-box;
   display: block;
   font-size: 21px;
@@ -1290,7 +1294,7 @@ height: auto;
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin-bottom: 88px;
+  margin-bottom: 86px;
 }
 
 .columns .about,
@@ -1397,16 +1401,16 @@ height: auto;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
 }
 
 .footer-bottom {
   background-color: #293449;
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  /*padding-bottom: 15px;*/
 }
 
-.footer-bottom .container {
+.footer-bottom .footer-bottom-flex {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -1426,6 +1430,13 @@ height: auto;
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f8;
+}
+
+.footer-bottom .create {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  padding-right: 11px;
 }
 
 .copyright {
@@ -2027,7 +2038,7 @@ height: auto;
 .about-perforator {
   font-family: "PT Sans", Arial, sans-serif;
   background-color: #f2f6f8;
-  padding: 48px 0 70px 0;
+  padding: 48px 0 68px 0;
 }
 
 .about-perforator h2 {
