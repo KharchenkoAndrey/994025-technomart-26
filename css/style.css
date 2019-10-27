@@ -2097,7 +2097,7 @@ input::-webkit-search-results-decoration
     font-family: 'PT Sans', Arial, sans-serif;
 }
 
-.filters hr
+/*.filters hr
 {
     height: 1px;
     margin-bottom: 16px;
@@ -2109,7 +2109,7 @@ input::-webkit-search-results-decoration
 .filters .helper
 {
     margin-top: 2px;
-}
+}*/
 
 .filters ul
 {
@@ -2142,7 +2142,7 @@ input::-webkit-search-results-decoration
 
 .filter-range
 {
-    margin-bottom: 25px;
+    margin-bottom: 41px;
 }
 
 .price-controls
@@ -2259,16 +2259,34 @@ input::-webkit-search-results-decoration
     font-weight: bold;
     line-height: 30px;
 
+    position: relative;
+
     margin-bottom: 15px;
     margin-left: -2px;
 
     text-transform: uppercase;
 }
 
+.filter legend::after
+{
+    position: absolute;
+    top: -17px;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    content: '';
+
+    background-color: #e5e5e5;
+}
+
 .filter ul
 {
     font-size: 15px;
     line-height: 20px;
+
+    padding-bottom: 18px;
 
     list-style: none;
 
@@ -2384,7 +2402,7 @@ input::-webkit-search-results-decoration
     font-size: 13px;
     line-height: 18px;
 
-    margin-top: 57px;
+    margin-top: 40px;
     padding: 9px 38px;
 
     cursor: pointer;
