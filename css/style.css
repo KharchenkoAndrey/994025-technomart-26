@@ -118,6 +118,7 @@ input::-webkit-search-results-decoration {
 }
 
 .site-search label {
+  display: block;
   position: relative;
 }
 
@@ -173,7 +174,7 @@ fill: #ee3643;
 .main-header {
   background-color: #f3f7f9;
   padding-bottom: 63px;
-  margin-bottom: 59px;
+  margin-bottom: 56px;
 }
 
 .header-top {
@@ -341,7 +342,7 @@ fill: #ee3643;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
       justify-content: space-between;
- margin-bottom: 37px;
+ margin-bottom: 40px;
 }
 
 .header-contacts {
@@ -1569,6 +1570,7 @@ height: auto;
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  margin-bottom: 7px;
 }
 
 .breadcrumbs {
@@ -2038,7 +2040,7 @@ height: auto;
 .about-perforator {
   font-family: "PT Sans", Arial, sans-serif;
   background-color: #f2f6f8;
-  padding: 48px 0 68px 0;
+  padding: 40px 0 69px 0;
 }
 
 .about-perforator h2 {
