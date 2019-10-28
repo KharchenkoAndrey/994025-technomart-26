@@ -98,9 +98,9 @@ input::-webkit-search-results-decoration
 {
     position: relative;
 
-    margin-right: 5px;
+    margin-right: 9px;
     margin-bottom: 30px;
-    padding-left: 42px;
+    padding-left: 48px;
 }
 
 .enter
@@ -112,7 +112,7 @@ input::-webkit-search-results-decoration
 {
     position: absolute;
     top: 15px;
-    left: 9px;
+    left: 15px;
 
     width: 20px;
     height: 17px;
@@ -209,7 +209,7 @@ input::-webkit-search-results-decoration
 
 .main-header
 {
-    margin-bottom: 56px;
+    margin-bottom: 59px;
     padding-bottom: 63px;
 
     background-color: #f3f7f9;
@@ -431,7 +431,7 @@ input::-webkit-search-results-decoration
 .header-contacts
 {
     padding-right: 70px;
-    padding-left: 70px;
+    padding-left: 50px;
 }
 
 .header-contacts span
@@ -495,7 +495,7 @@ input::-webkit-search-results-decoration
     display: flex;
 
     margin: 0;
-    margin-top: -1px;
+    margin-top: -4px;
     padding: 0;
 
     list-style: none;
@@ -522,12 +522,12 @@ input::-webkit-search-results-decoration
     color: #fff;
 }
 
-.site-navigation li:first-child a
+ .site-navigation-item:first-child a
 {
     padding-left: 54px;
 }
 
-.site-navigation li:last-child a
+.site-navigation-item:last-child a
 {
     padding-right: 54px;
 }
@@ -586,6 +586,8 @@ input::-webkit-search-results-decoration
 
     opacity: .3;
     background-image: url(../img/icon-logout.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .user-name::before
@@ -652,12 +654,12 @@ input::-webkit-search-results-decoration
     color: #32425c;
 }
 
-.user-navigation li:first-child a
+.user-navigation-item:first-child a
 {
     position: relative;
 }
 
-.user-navigation li:first-child a::after
+.user-navigation-item:first-child a::after
 {
     position: absolute;
     top: 50%;
@@ -933,7 +935,7 @@ input::-webkit-search-results-decoration
     /*height: 266px;*/
     min-height: 266px;
     padding: 25px 25px 22px;
-
+    background-color: #4c4541;
     background-image: url(../img/slide_1.jpg);
     background-repeat: no-repeat;
     background-position: 0, 0;
@@ -947,7 +949,7 @@ input::-webkit-search-results-decoration
     box-sizing: border-box;
     min-height: 266px;
     padding: 25px;
-
+    background-color: #4c4541;
     background-image: url(../img/slide_2.jpg);
     background-repeat: no-repeat;
     background-position: 0, 0;
@@ -1118,7 +1120,7 @@ input::-webkit-search-results-decoration
     box-shadow: 0 10px 25px 0 rgba(41, 52, 73, .5);
 }
 
-.product-item:hover .image .shape
+.product-item:hover .shape
 {
     display: -webkit-box;
     display: flex;
@@ -1360,19 +1362,21 @@ input::-webkit-search-results-decoration
 
     color: #fff;
     border-radius: 3px;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 2px;
     background-color: #ee3643;
 }
 
 .new-cost::after
 {
     position: absolute;
-    top: 5px;
+    top: 6px;
     right: -13px;
 
     overflow: hidden;
 
     width: 27px;
-    height: 27px;
+    height: 26px;
 
     content: '';
     -webkit-transform: rotate(45deg);
@@ -1482,7 +1486,7 @@ input::-webkit-search-results-decoration
 
     margin-top: 69px;
     margin-bottom: 80px;
-    padding-top: 41px;
+    padding-top: 43px;
     padding-bottom: 100px;
 
     background-color: #f4f8f9;
@@ -1514,6 +1518,22 @@ input::-webkit-search-results-decoration
     margin-top: 67px;
 }
 
+.tabs::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: 700px;
+  margin-top: -136px;
+
+  width: 10px;
+  height: 272px;
+
+  background-image: url(../img/tabsshadow.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .tabs input + label
 {
     cursor: pointer;
@@ -1535,14 +1555,13 @@ input::-webkit-search-results-decoration
 
     box-sizing: border-box;
     width: 240px;
-    margin-top: 3px;
-    margin-bottom: 2px;
     padding: 15px 0;
     padding-left: 20px;
 
     color: #fff;
     background-color: #32425c;
-    box-shadow: 0 1px 0 0 #293449, 0 -1px 0 0 #405069;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
 }
 
 .tabs label:hover,
@@ -1556,7 +1575,7 @@ input::-webkit-search-results-decoration
 {
     color: #32425c;
     background-color: #fff;
-    box-shadow: none;
+    border: none;
 }
 
 .tabs-content
@@ -1668,8 +1687,8 @@ input::-webkit-search-results-decoration
     margin-right: 120px;
 }
 
-.columns .about h2,
-.columns .contacts h2
+ .about h2,
+ .contacts h2
 {
     font-family: 'cuprum',Arial, sans-serif;
 
@@ -1677,7 +1696,7 @@ input::-webkit-search-results-decoration
     margin-top: -3px;
 }
 
-.columns .about h2
+.about h2
 {
     margin-bottom: 13px;
 }
@@ -1687,18 +1706,18 @@ input::-webkit-search-results-decoration
     font-family: 'Cuprum', Arial, sans-serif;
 
     margin-top: 5px;
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     margin-left: -3px;
 }
 
-.about .delivery-company li
+.delivery-company li
 {
     position: relative;
 
     margin-bottom: 20px;
 }
 
-.about .delivery-company li::before
+.delivery-company li::before
 {
     position: absolute;
     top: 50%;
@@ -1885,7 +1904,7 @@ input::-webkit-search-results-decoration
     padding-top: 34px;
 }
 
-.additional-footer-navigation  li:first-child a
+.additional-footer-navigation-item:first-child a
 {
     padding-left: 30px;
 }
@@ -2096,20 +2115,6 @@ input::-webkit-search-results-decoration
 {
     font-family: 'PT Sans', Arial, sans-serif;
 }
-
-/*.filters hr
-{
-    height: 1px;
-    margin-bottom: 16px;
-
-    border: none;
-    background-color: #e5e5e5;
-}
-
-.filters .helper
-{
-    margin-top: 2px;
-}*/
 
 .filters ul
 {
@@ -2517,24 +2522,24 @@ input::-webkit-search-results-decoration
     margin-right: 0;
 }
 
-.sort-switch a polyline
+.sort-switch-item polyline
 {
     fill: #c5c5c5;
 }
 
-.sort-switch a:hover polygon,
-.sort-switch a:hover polyline
+.sort-switch-item:hover polygon,
+.sort-switch-item:hover polyline
 {
     fill: #000;
 }
 
-.sort-switch a:active polygon,
-.sort-switch a:active polyline
+.sort-switch-item:active polygon,
+.sort-switch-item:active polyline
 {
     fill: #ee3643;
 }
 
-.sort-switch .active polygon
+ .active polygon
 {
     opacity: 1;
 
@@ -2842,7 +2847,7 @@ input::-webkit-search-results-decoration
 .cart-btn-continue
 {
     display: inline-block;
-
+    vertical-align: middle;
     width: 220px;
     padding: 10px 0;
 
