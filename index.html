@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minstyle.css">
   </head>
   <body>
     <header class="main-header">
@@ -21,7 +21,7 @@
               <label>
                 <input type="search" name="search" placeholder="Поиск:">
                 <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
-                  height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve" alt="search">
+                  height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve" aria-label="Поиск по сайту">
                   <g id="Layer_1">
                   </g>
                   <g id="Layer_2">
@@ -44,7 +44,7 @@
           <div class="header-about">
             <p class="description">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
             <p class="header-contacts">
-              <a class="phone" href="tel:+7(812)5550555" alt="Вы можете позвонить нам по нмеру +7 (812) 555-05-55">+7 (812) 555-05-55</a>
+              <a class="phone" href="tel:+7(812)5550555" aria-label="Вы можете позвонить нам по номеру телефона+7 (812) 555-05-55">+7 (812) 555-05-55</a>
               <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </p>
             <a class="autorization-batton login" href="">Войти</a>
@@ -72,12 +72,10 @@
                 <div class="offers-item materials new">
                   <h3 class="offers-title">Материалы</h3>
                   <a class="promo-button" href="">На любой вкус</a>
-                  <img class="offers-icon" src="img/icon-1.svg" width="78" height="62" alt="Материалы">
                 </div>
                 <div class="offers-item tools">
                   <h3 class="offers-title">Инструмент</h3>
                   <a class="promo-button" href="">На все случаи</a>
-                  <img class="offers-icon" src="img/icon-2.svg" width="78" height="62" alt="Инструмент">
                 </div>
                 <div class="offers-item slider">
                   <div class="slider-item">
@@ -130,18 +128,14 @@
                 <div class="offers-item technics">
                   <h3 class="offers-title">Техника</h3>
                   <a class="promo-button" href="">Для стройки</a>
-                  <img class="offers-icon" src="img/icon-3.svg" width="78" height="62" alt="Техника">
                 </div>
                 <div class="offers-item sale">
                   <h3 class="offers-title">Скидки 50%</h3>
                   <a class="promo-button" href="">На 350 товаров</a>
-                  <img class="offers-icon" src="img/icon-4.svg
-                  " width="78" height="62" alt="Скидки">
                 </div>
                 <div class="offers-item delivery">
                   <h3 class="offers-title">Доставка</h3>
                   <a class="promo-button" href="">Бесплатно</a>
-                  <img class="offers-icon" src="img/icon-5.svg" width="78" height="62" alt="Доставка">
                 </div>
               </div>
             </div>
@@ -295,9 +289,6 @@
                       <h3>Доставка</h3>
                       <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
                     </div>
-                    <div class="tabs-content-img">
-                      <img src="img/truck.png" width="468" height="261" alt="Доставка" >
-                    </div>
                   </section>
                   <section class="tabs-content warranty">
                     <div class="tabs-content-description">
@@ -306,9 +297,6 @@
                         а также в случае пожара, спровоцированного его возгоранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br>
                       Дом уж восстановите как-нибудь сами.</p>
                     </div>
-                    <div class="tabs-content-img">
-                      <img src="img/warranty.png" width="468" height="261" alt="Гарантия" >
-                    </div>
                   </section>
                   <section class="tabs-content credit">
                     <div class="tabs-content-description">
@@ -316,9 +304,6 @@
                       <p>Залезть в долговую яму стало проще!<br>
                       Кредитные консультанты придут вам на помощь.</p>
                       <a class="button tab-btn" href="">Отправить заявку</a>
-                    </div>
-                    <div class="tabs-content-img">
-                      <img src="img/credit.png" width="468" height="261" alt="Кредит" >
                     </div>
                   </section>
                 </div>
@@ -482,12 +467,12 @@
                         <p class="copyright feedback">Обратная связь:<br> <a href="">mail@htmlacademy.ru</a></p>
                         <p class="copyright">Разработано —<br> <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
                       </div>
-                    </div>>
+                    </div>
                   </div>
                 </div>
               </footer>
-              <script src="js/write-us.js"></script>
-              <script src="js/cart.js"></script>
-              <script src="js/map.js"></script>
+              <script src="js/minwrite-us.js"></script>
+              <script src="js/mincart.js"></script>
+              <script src="js/minmap.js"></script>
             </body>
           </html>

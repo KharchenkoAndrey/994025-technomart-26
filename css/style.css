@@ -522,7 +522,7 @@ input::-webkit-search-results-decoration
     color: #fff;
 }
 
- .site-navigation-item:first-child a
+.site-navigation-item:first-child a
 {
     padding-left: 54px;
 }
@@ -586,8 +586,8 @@ input::-webkit-search-results-decoration
 
     opacity: .3;
     background-image: url(../img/icon-logout.svg);
-    background-position: 0 0;
     background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .user-name::before
@@ -735,6 +735,11 @@ input::-webkit-search-results-decoration
     justify-content: space-between;
 }
 
+.offers-item:nth-of-type(5n)
+{
+    margin-right: 0;
+}
+
 .left-column .offers-item:nth-child(1)::after
 {
     position: absolute;
@@ -758,6 +763,86 @@ input::-webkit-search-results-decoration
 .offers .delivery
 {
     background-color: #ffbf47;
+}
+
+.left-column .offers-item:nth-child(1)::before
+{
+    position: absolute;
+    top: 31px;
+    right: 26px;
+
+    width: 78px;
+    height: 62px;
+
+    content: '';
+
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.left-column .offers-item:nth-child(2)::before
+{
+    position: absolute;
+    top: 31px;
+    right: 26px;
+
+    width: 78px;
+    height: 62px;
+
+    content: '';
+
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.right-column .offers-item:nth-child(1)::before
+{
+    position: absolute;
+    top: 31px;
+    right: 29px;
+
+    width: 78px;
+    height: 62px;
+
+    content: '';
+
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.right-column .offers-item:nth-child(2)::before
+{
+    position: absolute;
+    top: 31px;
+    right: 35px;
+
+    width: 78px;
+    height: 62px;
+
+    content: '';
+
+    background-image: url(../img/icon-4.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.right-column .offers-item:nth-child(3)::before
+{
+    position: absolute;
+    top: 32px;
+    right: 31px;
+
+    width: 78px;
+    height: 62px;
+
+    content: '';
+
+    background-image: url(../img/icon-5.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .offers .tools
@@ -935,6 +1020,7 @@ input::-webkit-search-results-decoration
     /*height: 266px;*/
     min-height: 266px;
     padding: 25px 25px 22px;
+
     background-color: #4c4541;
     background-image: url(../img/slide_1.jpg);
     background-repeat: no-repeat;
@@ -949,6 +1035,7 @@ input::-webkit-search-results-decoration
     box-sizing: border-box;
     min-height: 266px;
     padding: 25px;
+
     background-color: #4c4541;
     background-image: url(../img/slide_2.jpg);
     background-repeat: no-repeat;
@@ -1362,8 +1449,8 @@ input::-webkit-search-results-decoration
 
     color: #fff;
     border-radius: 3px;
-    border-bottom-right-radius: 1px;
     border-top-right-radius: 2px;
+    border-bottom-right-radius: 1px;
     background-color: #ee3643;
 }
 
@@ -1518,20 +1605,21 @@ input::-webkit-search-results-decoration
     margin-top: 67px;
 }
 
-.tabs::after {
-  content: "";
+.tabs::after
+{
+    position: absolute;
+    top: 50%;
+    right: 700px;
 
-  position: absolute;
-  top: 50%;
-  right: 700px;
-  margin-top: -136px;
+    width: 10px;
+    height: 272px;
+    margin-top: -136px;
 
-  width: 10px;
-  height: 272px;
+    content: '';
 
-  background-image: url(../img/tabsshadow.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+    background-image: url(../img/tabsshadow.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .tabs input + label
@@ -1559,9 +1647,9 @@ input::-webkit-search-results-decoration
     padding-left: 20px;
 
     color: #fff;
-    background-color: #32425c;
-    border-bottom: 1px solid #293449;
     border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
+    background-color: #32425c;
 }
 
 .tabs label:hover,
@@ -1574,8 +1662,8 @@ input::-webkit-search-results-decoration
 .tabs input:checked + label
 {
     color: #32425c;
-    background-color: #fff;
     border: none;
+    background-color: #fff;
 }
 
 .tabs-content
@@ -1593,29 +1681,48 @@ input::-webkit-search-results-decoration
     flex-wrap: wrap;
 }
 
-.tabs-content-description
+.delivery .tabs-content-description
 {
     position: absolute;
     top: 0;
     left: 0;
+
+    width: 620px;
+    padding-bottom: 110px;
+
+    background-image: url(../img/truck.png);
+    background-repeat: no-repeat;
+    background-position: 151px 23px;
 }
 
-.tabs-content-img
+.warranty .tabs-content-description
 {
-    /*margin-top: 25px;*/
-    margin-left: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 620px;
+    padding-bottom: 110px;
+
+    background-image: url(../img/warranty.png);
+    background-repeat: no-repeat;
+    background-position: 230px 0;
 }
 
-.delivery .tabs-content-img
+.credit .tabs-content-description
 {
-    margin-top: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 620px;
+    padding-bottom: 110px;
+
+    background-image: url(../img/credit.png);
+    background-repeat: no-repeat;
+    background-position: 140px 0;
 }
 
-.tabs-content-img img
-{
-    width: 100%;
-    height: auto;
-}
 
 .tabs-content h3
 {
@@ -1687,8 +1794,8 @@ input::-webkit-search-results-decoration
     margin-right: 120px;
 }
 
- .about h2,
- .contacts h2
+.about h2,
+.contacts h2
 {
     font-family: 'cuprum',Arial, sans-serif;
 
@@ -1705,8 +1812,8 @@ input::-webkit-search-results-decoration
 {
     font-family: 'Cuprum', Arial, sans-serif;
 
-    margin-top: 5px;
-    margin-bottom: 19px;
+    margin-top: 7px;
+    margin-bottom: 17px;
     margin-left: -3px;
 }
 
@@ -1725,7 +1832,6 @@ input::-webkit-search-results-decoration
 
     width: 25px;
     height: 2px;
-    margin-top: -1px;
 
     content: '';
 
@@ -2539,7 +2645,7 @@ input::-webkit-search-results-decoration
     fill: #ee3643;
 }
 
- .active polygon
+.active polygon
 {
     opacity: 1;
 
@@ -2847,9 +2953,11 @@ input::-webkit-search-results-decoration
 .cart-btn-continue
 {
     display: inline-block;
-    vertical-align: middle;
+
     width: 220px;
     padding: 10px 0;
+
+    vertical-align: middle;
 
     border-radius: 3px;
 }
